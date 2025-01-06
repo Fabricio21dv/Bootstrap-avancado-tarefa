@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bootstrap</title>
+    <link href="./lib/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-inner img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Séries do momento</h1>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/breakingbadsales.png" class="d-block w-100" alt="Elenco de breaking bad">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/got2.jpg" class="d-block w-100" alt="Trono de game of thrones">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/bcs.jpg" class="d-block w-100" alt="Saul, de better call saul">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card">
+                    <img src="./images/breaking-bad.jpg" class="card-img-top" alt="breaking bad">
+                    <div class="card-body">
+                        <h5 class="card-title">Breaking Bad</h5>
+                        <p class="card-text">Série de 2008, tida por muitos como a melhor série já feita.</p>
+                        <a href="#" class="btn btn-primary">Leia Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card">
+                    <img src="./images/got.jpg" class="card-img-top" alt="game of thrones">
+                    <div class="card-body">
+                        <h5 class="card-title">Game of Thrones</h5>
+                        <p class="card-text">Apesar do fim ter deixado os fans frustrados, é também uma das melhores séries já feitas.</p>
+                        <a href="#" class="btn btn-primary">Leia Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card">
+                    <img src="./images/bcs2.jpg" class="card-img-top" alt="better call saul">
+                    <div class="card-body">
+                        <h5 class="card-title">Better Caul Saul</h5>
+                        <p class="card-text">Apesar de ser um filler, segue sua série "mãe" ao topo da lista de melhores séries.</p>
+                        <a href="#" class="btn btn-primary">Leia Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
